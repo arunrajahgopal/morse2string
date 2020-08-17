@@ -1,7 +1,6 @@
-import { Injectable } from '@angular/core';
-import {from, Observable, of} from 'rxjs';
+import {Injectable} from '@angular/core';
+import {Observable, of} from 'rxjs';
 import * as morseCodes from '../assets/morse-code.json';
-import { Code } from './morse.entitiy';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +18,7 @@ export class MorseCodeService {
 
   codifyMessage(message: string): Observable<string> {
     let codifyMessage = '';
-    for (const [messageIteration, i] of message) {
+    for (const messageIteration of message) {
       if (messageIteration !== ' ') {
         if (this.lettersTranslator[messageIteration] !== undefined) {
           codifyMessage += this.lettersTranslator[messageIteration];
@@ -30,7 +29,7 @@ export class MorseCodeService {
       codifyMessage += ' ';
     }
     return of(codifyMessage.trim());
-    }
+  }
 
 
   decodifyMessage(morseCode: string): Observable<string> {

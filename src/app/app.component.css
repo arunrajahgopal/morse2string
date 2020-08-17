@@ -1,22 +1,27 @@
-.mat-form-field{
+.mat-form-field {
   display: block;
 }
-.mat-content{
+
+.mat-content {
   padding: 0 30px;
 }
-.mat-card{
+
+.mat-card {
   margin-top: 25px;
 }
-mat-grid-list{
+
+mat-grid-list {
   font-size: 16px;
 }
-mat-grid-tile-header.mat-grid-tile-header{
+
+mat-grid-tile-header.mat-grid-tile-header {
   background: #3f51b5;
   color: white;
   font-size: 20px;
   justify-content: center;
 }
-mat-card p{
+
+mat-card p {
   max-width: 550px;
   white-space: pre-wrap;
 }

@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { MorseCodeService } from './morse-code.service';
+import {MorseCodeService} from './morse-code.service';
 
 describe('MorseCodeService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

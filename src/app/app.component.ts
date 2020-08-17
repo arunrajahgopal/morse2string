@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MorseCodeService} from './morse-code.service';
-import {FormBuilder, Validators} from '@angular/forms';
+import {FormBuilder} from '@angular/forms';
 
 
 @Component({
@@ -16,12 +16,13 @@ export class AppComponent implements OnInit {
   morseForm = this.fb.group({
     morseCode: [''],
     string: ['']
-    });
+  });
 
   constructor(
     private morseCodeService: MorseCodeService,
     private fb: FormBuilder
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
 
@@ -30,16 +31,18 @@ export class AppComponent implements OnInit {
   convertToString(ev) {
     const morseCode = ev.target.value;
     this.morseCodeService.decodifyMessage(morseCode).subscribe(m => {
-      this.resultString = m;
-    }
+        this.resultString = m;
+      }
     );
   }
+
   convertToMorse(ev) {
     const stringToConvert = ev.target.value.toUpperCase();
     this.morseCodeService.codifyMessage(stringToConvert).subscribe(c => {
       this.resultMorseCode = c;
     });
   }
+
   resetFormInput(value) {
     this.morseForm.controls[value].reset();
     if (value === 'morseCode') {
