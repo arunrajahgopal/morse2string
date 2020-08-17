@@ -4,21 +4,21 @@
       Morse2String
     </mat-grid-tile-header>
     <div class="mat-content">
-      <mat-label>Welcome to Morse2String. A simple Morse code to String Converter and Viceversa.</mat-label>
+      <mat-label>Willkommen bei Morse2String. Ein simpler Morse-Code zum String-Konverter und vice versa.</mat-label>
       <mat-card>
-        <h2>Input:</h2> <br/>
+        <h2>Eingabe:</h2> <br/>
         <form [formGroup]="morseForm">
           <mat-form-field class="form-full-width">
-            <mat-label>Enter some Text here.</mat-label>
-            <input matInput placeholder="Enter a string from A-Z | 0-9" formControlName="string"
+            <mat-label>Hier Text eingeben.</mat-label>
+            <input matInput placeholder="Bitte verwenden Sie die Zeichen A-Z | 0-9." formControlName="string"
                    (input)="convertToMorse($event)">
             <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="resetFormInput('string')">
               <mat-icon>close</mat-icon>
             </button>
           </mat-form-field>
           <mat-form-field class="example-full-width">
-            <mat-label>Enter Morse Code here.</mat-label>
-            <input matInput placeholder="Use Space to seperate codes." (input)="convertToString($event)"
+            <mat-label>Morse-Code hier eingeben.</mat-label>
+            <input matInput placeholder="Bitte verwenden Sie Leerzeichen, um Buchstaben zu trennen." (input)="convertToString($event)"
                    formControlName="morseCode">
             <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="resetFormInput('morseCode')">
               <mat-icon>close</mat-icon>
@@ -27,9 +27,9 @@
         </form>
       </mat-card>
       <mat-card>
-        <h2>Results:</h2> <br/>
-        <p>Morse Code: {{resultMorseCode}}<br/></p>
-        <p>String: {{resultString}} </p>
+        <h2>Ergebnisse:</h2> <br/>
+        <p>Morsecode: {{resultMorseCode}}<br/></p>
+        <p>Text: {{resultString}} </p>
       </mat-card>
     </div>
   </mat-grid-tile>
