@@ -16,3 +16,7 @@ mat-grid-tile-header.mat-grid-tile-header{
   font-size: 20px;
   justify-content: center;
 }
+mat-card p{
+  max-width: 550px;
+  white-space: pre-wrap;
+}

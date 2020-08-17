@@ -42,6 +42,11 @@ export class AppComponent implements OnInit {
   }
   resetFormInput(value) {
     this.morseForm.controls[value].reset();
+    if (value === 'morseCode') {
+      this.resultString = '';
+    } else if (value === 'string') {
+      this.resultMorseCode = '';
+    }
   }
 
 

@@ -9,18 +9,49 @@ To Run the App use `ng serve` in your terminal and then navigate to `http://loca
 
 The App is hosted in Github Pages. Click here to view the demo. [Morse2String](https://arunrajahgopal.github.io/morse2string/)
 
-## Build
+## Morse Code Reference
+### Letters
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+| Character | International Code |
+|-----------|--------------------|
+|A|.-|
+|B|-...|
+|C|-.-.|
+|D|-..|
+|E|.|
+|F|..-.|
+|G|--.|
+|H|....|
+|I|..|
+|J|.---|
+|K|-.-|
+|L|.-..|
+|M|--|
+|N|-.|
+|O|---|
+|P|.--.|
+|Q|--.-|
+|R|.-.|
+|S|...|
+|T|-|
+|U|..-|
+|V|...-|
+|W|.--|
+|X|-..-|
+|Y|-.--|
+|Z|--..|
 
-## Running unit tests
+### Numbers
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+| Number | International Code |
+|--------|--------------------|
+|1|·----|
+|2|··---|
+|3|···--|
+|4|····-|
+|5|·····|
+|6|-····|
+|7|--···|
+|8|---··|
+|9|----·|
+|0|-----|
