@@ -1,14 +1,13 @@
 # Morse2string
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+Welcome to _Morse2string_ a responsive Angular App to convert Text to Morse Code and vice versa. 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To Run the App use `ng serve` in your terminal and then navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The App is hosted in Github Pages. Click here to view the demo. [Morse2String](https://arunrajahgopal.github.io/morse2string/)
 
 ## Build
 

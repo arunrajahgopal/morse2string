@@ -11,7 +11,6 @@ export class MorseCodeService {
   lettersTranslator: { [key: string]: string } = {};
 
   constructor() {
-    console.log(morseCodes['default']);
     morseCodes['default'].forEach(mc => {
       this.codesTranslator[mc.morse] = mc.character;
       this.lettersTranslator[mc.character] = mc.morse;
