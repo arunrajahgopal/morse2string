@@ -8,21 +8,21 @@
       <mat-card>
         <h2>Eingabe:</h2> <br/>
         <form [formGroup]="morseForm">
-          <mat-form-field class="form-full-width">
-            <mat-label>Hier Text eingeben.</mat-label>
-            <input matInput placeholder="Bitte verwenden Sie die Zeichen A-Z | 0-9." formControlName="string"
-                   (input)="convertToMorse($event)">
-            <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="resetFormInput('string')">
+          <mat-form-field appearance="outline">
+            <mat-label>Hier Text eingeben(a-z | A-Z |0-9)</mat-label>
+            <input matInput formControlName="string" (input)="convertToMorse($event)">
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="resetFormInput('string')">
               <mat-icon>close</mat-icon>
             </button>
+              <mat-hint>Bitte verwenden Sie die Zeichen A-Z | 0-9.</mat-hint>
           </mat-form-field>
-          <mat-form-field class="example-full-width">
-            <mat-label>Morse-Code hier eingeben.</mat-label>
-            <input matInput placeholder="Bitte verwenden Sie Leerzeichen, um Buchstaben zu trennen." (input)="convertToString($event)"
-                   formControlName="morseCode">
-            <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="resetFormInput('morseCode')">
+          <mat-form-field appearance="outline">
+            <mat-label>Hier Morse-Code eingeben.(dot | dash)</mat-label>
+            <input matInput (input)="convertToString($event)" formControlName="morseCode">
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="resetFormInput('morseCode')">
               <mat-icon>close</mat-icon>
             </button>
+              <mat-hint>Bitte verwenden Sie Leerzeichen, um Buchstaben zu trennen.</mat-hint>
           </mat-form-field>
         </form>
       </mat-card>

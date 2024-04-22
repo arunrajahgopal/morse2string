@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import * as morseCodes from '../assets/morse-code.json';
+import {Code} from "src/app/morse.entitiy";
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class MorseCodeService {
   lettersTranslator: { [key: string]: string } = {};
 
   constructor() {
-    morseCodes['default'].forEach(mc => {
+    morseCodes['default'].forEach((mc: Code) => {
       this.codesTranslator[mc.morse] = mc.character;
       this.lettersTranslator[mc.character] = mc.morse;
     });
