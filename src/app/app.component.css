@@ -1,10 +1,16 @@
+.mat-grid-tile .mat-grid-tile-header{
+  background: #d7e3ff;
+  color: #005cbb;;
+}
+
 .mat-mdc-form-field {
   display: block;
   margin-bottom: 30px;
 }
 
-.mat-mdc-content {
+.mat-content {
   padding: 0 30px;
+  margin: 0 30px;
 }
 
 .mat-mdc-card {

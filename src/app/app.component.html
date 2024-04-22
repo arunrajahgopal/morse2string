@@ -10,7 +10,7 @@
         <form [formGroup]="morseForm">
           <mat-form-field appearance="outline">
             <mat-label>Hier Text eingeben(a-z | A-Z |0-9)</mat-label>
-            <input matInput formControlName="string" (input)="convertToMorse($event)">
+            <input matInput formControlName="string" (input)="convertToMorse($event)" numbersAlphabetsOnly>
             <button matSuffix mat-icon-button aria-label="Clear" (click)="resetFormInput('string')">
               <mat-icon>close</mat-icon>
             </button>
@@ -18,7 +18,7 @@
           </mat-form-field>
           <mat-form-field appearance="outline">
             <mat-label>Hier Morse-Code eingeben.(dot | dash)</mat-label>
-            <input matInput (input)="convertToString($event)" formControlName="morseCode">
+            <input matInput (input)="convertToString($event)" formControlName="morseCode" dotDashOnly>
             <button matSuffix mat-icon-button aria-label="Clear" (click)="resetFormInput('morseCode')">
               <mat-icon>close</mat-icon>
             </button>
